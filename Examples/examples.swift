@@ -5,26 +5,15 @@
 //  Created by Pedro Omar  on 5/19/26.
 //
 
-import Foundation
 import SwiftUI
-import Combine
+import toDus
 
-// MARK: - Message Type
-
-enum MessageType {
-    case text, photo, location, contact 
+struct Examples: View {
+    @StateObject private var chatRequest = ChatRequest()
+   
+    var body: some View {
+        Text("Hello, World!")
+    }
 }
 
-// MARK: - MediaType
 
-enum MediaType {
-    case audio, video
-}
-
-// MARK: - Chat Request
-
-final class ChatRequest: ObservableObject {
-    @Published var messageType: MessageType = .text
-    @Published var mediaType: MediaType = .audio
-    @Published var user: [User] = []
-}

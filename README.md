@@ -15,50 +15,50 @@
 `toDus` es un sdk escrito en Swift para empezar a crear la app de toDus para iOS.
 ## 👨‍💻 Instalación
 ```swift
-    dependencies: [
-        .package(url: "https://github.com/pedroomar23/todus-sdk", from: "1.0.0")
-    ]
+dependencies: [
+    .package(url: "https://github.com/pedroomar23/todus-sdk", from: "1.0.0")
+]
 ```
 ## 🌐 Uso 
 ```swift
-    import SwiftUI 
-    import toDus 
+import SwiftUI 
+import toDus 
     
-    struct ChatView: View {
-        @StateObject private var chatRequest = ChatRequest()
+struct ChatView: View {
+    @StateObject private var chatRequest = ChatRequest()
         
-        var body: some View {
-            Text("Hello World!")
-        }
+    var body: some View {
+        Text("Hello World!")
     }
+  }
 }
 ```
 ## ⚡️ Features 
 ### 📱 Chats
-- [] Lista de Chats
-- [] Eliminar Chats 
+- [ ] Lista de Chats
+- [ ] Eliminar Chats 
 ### 📱 Messages
-- [] Enviar y Recibir Mensajes
-- [] Eliminar mensaje para mí
-- [] Editar mensajes
-- [] Copiar mensajes
+- [ ] Enviar y Recibir Mensajes
+- [ ] Eliminar mensaje para mí
+- [ ] Editar mensajes
+- [ ] Copiar mensajes
 ### 📱 Grupos 
-- [] Lista de Grupos 
-- [] Crear grupos 
-- [] Eliminar grupos 
+- [ ] Lista de Grupos 
+- [ ] Crear grupos 
+- [ ] Eliminar grupos 
 ### 📱 Canales
-- [] Lista de Canales 
-- [] Crear canales
-- [] Eliminar canales
+- [ ] Lista de Canales 
+- [ ] Crear canales
+- [ ] Eliminar canales
 ### 📱 Estados
-- [] Crear un estado por 24h 
-- [] Emojis 
+- [ ] Crear un estado por 24h 
+- [ ] Emojis 
 
 ## ✅ Ejemplos 
 Para ver ejemplos de como usar el sdk puedes acceder aquí [examples](https://github.com/pedroomar/todus-sdk/blob/main/Examples/examples.swift).
 ## 😃 Consideraciones
 `todus` ya cuenta con el ViewModel dentro del sdk por lo que no es necesario hacerlo dentro del proyecto. Este sdk esta hecho para crear las bases principales de toDus, es decir chats, grupos, canales, estados, entre otros. Otros ViewModels si pueden ser creados dentro del proyecto. A mi consideración esto ayudaría a que el desarrollo de las bases principales de la app se desarrollen más rapido ya que el sdk se encarga de ello.
-## Contribuciones
+## 🤝 Contribuciones
 Puedes contribuir siendo o no desarrollador siguiendo los pasos creados en [contribuciones](https://github.com/pedroomar23/blob/main/Contributing.md)
 ## 🔓 License
 Este sdk está creado bajo la [Licencia MIT](https://github.com/pedroomar23/todus-sdk/blob/main/License.md)
